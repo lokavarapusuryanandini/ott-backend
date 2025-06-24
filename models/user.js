@@ -9,7 +9,8 @@ const userSchema = new mongoose.Schema({
   subscription: {
     status: { type: String, default: 'inactive' },
     expiry: { type: Date }
-  }
+  },
+  refreshToken: { type: String, default: ''   },
 }, { timestamps: true });
 
 // Hash password before saving
